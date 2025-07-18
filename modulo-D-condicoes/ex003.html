@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local or Foreing?</title>
+</head>
+<body>
+    <h1>Local or Foreign?</h1>
+    Where are you from? <input type="text" name="from" id="from" placeholder="country" autocomplete="on">
+    <input type="button" value="Submit" onclick="check()">
+    <div id="answer"></div>
+
+    <script>
+        function check() {
+        var country = document.querySelector(`#from`).value
+        var answer = document.querySelector('div#answer')
+          if (country !== `england`) {
+            answer.innerHTML = '<p>You are <mark>Foreign</mark></p>'
+        } else {
+            answer.innerHTML = '<p>You are <strong>Local</strong></p>'
+        }  
+        }
+    </script>
+    
+</body>
+</html>
