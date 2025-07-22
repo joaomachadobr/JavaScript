@@ -11,7 +11,17 @@ if (anoNas.value.length == 0 || Number(anoNas.value) > ano) {
 } else {
     var fsex = document.getElementsByName('radsex')
     var idade = ano - Number(anoNas.value)
-    res.innerHTML = `Idade ${idade} e sexo ${fsex}`
+    var genero = ''
+    if (fsex[0].checked) {
+        //genero = fsex[0].value
+        genero = 'Homem'
+    } else if (fsex[1].checked) {
+        //genero = fsex[1].value
+        genero = 'Mulher'
+    }
+    res.style.textAlign = 'center'
+    res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
+
 }
 
 
