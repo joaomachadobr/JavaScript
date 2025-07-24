@@ -22,7 +22,7 @@ if (ini < fim) {
     }
     res.innerHTML += '🏁'
 } else {
-    res.innerHTML += '🏁'
+    res.innerHTML += '🏁'  
     for (var c = ini; c >= fim; c -= pas) {
         res.innerHTML += `${c} 👈 `
     } 
