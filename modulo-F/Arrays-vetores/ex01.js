@@ -8,9 +8,12 @@ console.log(`Nosso vetor: ${num}`)
 console.log(`O vetor tem ${num.length} indices`)
 console.log(`O primeiro valor do vetor e ${num[0]}`) //zero e o primeiro indice.
 
-let pos = num.indexOf(5)
-if(pos == -1) {
-    console.log('O valor nao foi encontrado')
-} else {
-    console.log(`o valor ta no indice ${pos}`)
-}
+// let pos = num.indexOf(5)
+// if(pos == -1) {
+//     console.log('O valor nao foi encontrado')
+// } else {
+//     console.log(`o valor ta no indice ${pos}`)
+// }
+
+console.log(...num) //✅ O que o ... (spread) faz?
+// Ele espalha os valores de um array (ou objeto) como elementos soltos.
